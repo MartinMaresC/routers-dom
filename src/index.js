@@ -22,7 +22,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div>Hola Mundo!</div>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
