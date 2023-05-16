@@ -3,19 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './routes/Home';
+import About from './routes/About';
+import Contact from './routes/Contact';
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<h1>Home</h1>
+    element:<Home />
   },
   {
     path:"/About",
-    element:<h1>About</h1>
+    element:<About />
   },
   {
     path:"/Contact",
-    element:<h1>Contact</h1>
+    element:<Contact />
   },
 ]);
 
