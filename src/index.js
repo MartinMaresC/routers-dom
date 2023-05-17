@@ -10,7 +10,8 @@ import Contact from './routes/Contact';
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<Home />
+    element:<Home />,
+    errorElement: <h1>Error</h1>
   },
   {
     path:"/About",
