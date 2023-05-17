@@ -15,17 +15,13 @@ const router = createBrowserRouter([
     children: [
       {
         path:'contacts/:contactid',
-        element:<h2>Contact id</h2>
+        element:<Contact />
       }
     ]
   },
   {
     path:"/About",
     element:<About />
-  },
-  {
-    path:"/Contact",
-    element:<Contact />
   },
 ]);
 
