@@ -6,12 +6,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home';
 import About from './routes/About';
 import Contact from './routes/Contact';
+import Error from './routes/Error';
 
 const router = createBrowserRouter([
   {
     path:"/",
     element:<Home />,
-    errorElement: <h1>Error</h1>,
+    errorElement: <Error />,
     children: [
       {
         path:'contacts/:contactid',
