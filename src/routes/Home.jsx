@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Menu from "../Components/Menu";
 
 export default function Home () {
@@ -5,7 +6,14 @@ export default function Home () {
       <div>
         <Menu />
         <h1>This is home</h1>
-      </div>  
+
+        <div>
+        <Outlet />
+        </div>
+      </div> 
+      
+      
     ) 
+      
 
 }
