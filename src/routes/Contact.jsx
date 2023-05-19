@@ -9,6 +9,9 @@ export default function Contact () {
         () => getContact(params.contactid),
         [params.contactid]
     );
+    if(!contact){
+        throw new Error('Contact does not exist');
+    }
     return (
         <div>
             <h1>{contact.name}</h1>
