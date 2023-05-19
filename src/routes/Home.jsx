@@ -7,10 +7,8 @@ export default function Home () {
     return(
       <div>
         <Menu />
-        <h1>This is home</h1>
-
-        <div>
-          <div>
+        <div className="maincontainer">
+          <div className="sidebar">
             {items.map((item) => (
               <div>
                 <Link to={`/contacts/${item.id}`}>{item.name}</Link>
